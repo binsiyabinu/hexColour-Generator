@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Color Animation Demo</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <style>
+  #elem {
+    height: 16em;
+    background-color: red;
+    font-size: 45px;
+    padding: 4em;
+    text-align: center;
+    width:;
+    align-items: center;
+    color: white;
+
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+<div id="elem">Welcome to the world of colours!!!</div>
+<!-- <button id="toggle">animate colors</button> -->
+
+<script>
+var i;
+for(i=0;i<100;i++)
+{
+$( window ).load(function() {
+  $( "#elem" ).animate({
+    backgroundColor: "#70fea2",
+    color: "#f44c64"
+
+  },500);
+  $( "#elem" ).animate({
+    backgroundColor: "#4ef6f6",
+      color: "#f64ee9"
+  },500);
+  $( "#elem" ).animate({
+    backgroundColor: "#fafc6a",
+      color: "#6ae1fc"
+  },500);
+  $( "#elem" ).animate({
+    backgroundColor: "#d24cf4",
+      color: "#f44c64"
+  },500);
+  $( "#elem" ).animate({
+    backgroundColor: "#f4a94c",
+      color: "#f4a94c"
+  },500);
+});
+}
+</script>
+
+</body>
+</html>
